@@ -4,7 +4,7 @@ const Card = ({ card }) => {
   return (
     <div className="card">
       <img
-        src={card.urls.small}
+        src={card.urls.regular}
         className="card__img card-img-top"
         alt={card.user.name}
       />
