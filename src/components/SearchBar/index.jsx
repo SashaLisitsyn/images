@@ -1,12 +1,18 @@
 import './styles.css';
 
-const SearchBar = ({ query, setQuery, onSearch }) => {
+import { useDispatch } from 'react-redux';
+
+import { searchImages } from '../../actions/imagesActions';
+
+const SearchBar = ({ query, setQuery }) => {
+  const dispatch = useDispatch();
+
   const handleInputClick = (event) => {
     setQuery(event.target.value);
   };
 
   const handleButtonClick = () => {
-    onSearch();
+    dispatch(searchImages(query));
   };
 
   const handleKeyPress = (event) => {
