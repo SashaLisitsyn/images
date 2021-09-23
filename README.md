@@ -15,5 +15,6 @@
 3. JS.
 4. React.
 5. Redux.
+6. REST API.
 
 https://sashalisitsyn.github.io/images/
